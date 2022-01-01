@@ -1,0 +1,759 @@
+/*============================= 
+extra small device
+============================= */
+@media(max-width:575px){
+
+    p{
+        line-height: 20px !important;
+    }
+
+    /* common header starts*/
+    .common-header h3{
+        font-size: 30px;
+        text-align: center;
+    }
+    /* common header ends*/
+
+    /* navbar starts */
+    .navbar{
+        background: #9d4dfb;
+    }
+    .navbar-brand img{
+        width: 50% !important;
+    }
+    .navbar-toggler{
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        margin-top: 25px;
+    }
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 0;
+    }
+    .navbar ul li{
+        text-align: center;
+        padding-bottom: 10px !important;
+    }
+    .navbar ul li a{
+        transition: all linear .6s;
+        -webkit-transition: all linear .6s;
+        -moz-transition: all linear .6s;
+        -ms-transition: all linear .6s;
+        -o-transition: all linear .6s;
+    }
+    .navbar ul li a:hover{
+        background: #fff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .navbar .nav-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .navbar .nav-btn a{
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    /* navbar ends */
+
+    /* banner starts */
+    #banner .banner-img {
+        padding-top: 120px;
+    }
+    #banner .banner-img img{
+        margin-left: 0;
+    }
+    #banner .banner-text {
+        padding: 50px 0px 30px 0px;
+        text-align: center;
+    }
+    #banner .banner-text h5 {
+        margin-bottom: 0px !important;
+    }
+    #banner .banner-text h2{
+        font-size: 180px;
+        margin-left: 0px
+    }
+    #banner .banner-text p{
+        margin-top: 0px;
+    }
+    /* banner ends */
+
+    /* register starts */
+    .register{
+        display: none;
+    }
+    /* register ends */
+
+    /* game starts */
+    .game-header {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    #game .game-item {
+        padding-bottom: 30px;
+    }
+    /* game ends */
+
+    /* spin starts */
+    #spin{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #spin .spin-text {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    .spin-text h5 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .spin-text p {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    #spin .spin-text .spin-text-btn {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    /* spin ends */
+
+    /* price starts */
+    #price {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #price .price-item {
+        margin-top: 60px;
+    }
+    #price .price-item .price-body .price-text-btn {
+        padding: 5px 5px;
+    }
+    /* price ends */
+
+    /* tournaments starts */
+    #tournaments{
+        padding: 60px 0;
+    }
+    #tournaments .question .question-header{
+        padding-right: 0;
+        text-align: center;
+    }
+    #tournaments .question .question-header ol li span {
+        display: inline-block;
+        width: 280px;
+        padding: 15px 0;
+    }
+    #tournaments .question .question-header ol P {
+        padding: 0;
+        margin-bottom: 0 !important;
+    }
+    .today-tournaments .count p {
+        top: 20px;
+        left: 0;
+    }
+    .today-tournaments .simply-countdown {
+        top: 40px;
+        left: 0;
+    }
+    .simply-countdown > .simply-section {
+        width: 80px !important;
+        margin: 0px 6px 0px 0px;
+    }
+    /* tournaments ends */
+
+    /* payments starts */
+    #payments .payment {
+        padding: 0;
+    }
+    #payments .subscribe .s-mail form {
+        margin-bottom: 40px;
+    }
+    #payments .subscribe .s-mail form input {
+        width: 85%;
+    }
+    #payments .subscribe .s-mail form a{
+        width: 15%; 
+    }
+    #payments .subscribe .s-mail form a i {
+        padding-left: 4%;
+    }
+    #payments .payment .p-img a img {
+        padding-bottom: 15px;
+    }
+    /* payments ends */
+
+    /* footer starts */
+    #footer{
+        text-align: center;
+    }
+    #footer .footer-top .jackpot .jackpot-body p {
+        padding-bottom: 20px;
+        padding-right: 0;
+    }
+    #footer .footer-top .import-links{
+        padding: 30px 0;
+    }
+    #footer .security-body{
+        padding-left: 0;
+    }
+    #footer .footer-copy p::after{
+        display: none;
+    }
+    #footer .footer-copy p::before{
+        display: none;
+    }
+    /* footer ends */
+
+    /* back-top button starts */
+    .bc-tp-btn {
+        right: 12px;
+        bottom: 30px;
+    }
+    .bc-tp-btn i {
+        font-size: 30px;
+        padding: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    /* back-top button ends */
+    
+}
+
+/*============================= 
+extra small device
+============================= */
+
+/*============================= 
+small device
+============================= */
+@media(min-width: 576px) and (max-width: 767px){
+
+    /* navbar starts */
+    .navbar{
+        background: #9d4dfb;
+    }
+    .navbar-brand img{
+        width: 80% !important;
+    }
+    .navbar-toggler{
+        border: 2px solid #8230fd;
+        color: #ffffff;
+        margin-top: 25px;
+    }
+    .navbar ul li{
+        text-align: center;
+        padding-bottom: 20px !important;
+    }
+    .navbar ul li a{
+        transition: all linear .6s;
+        -webkit-transition: all linear .6s;
+        -moz-transition: all linear .6s;
+        -ms-transition: all linear .6s;
+        -o-transition: all linear .6s;
+}
+    .navbar ul li a:hover{
+        background: #fff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .navbar .nav-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .navbar .nav-btn a{
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+    /* navbar ends */
+
+    /* banner starts */
+    #banner .banner-img {
+        padding-top: 150px;
+    }
+    #banner .banner-img img{
+        margin-left: 0;
+    }
+    #banner .banner-text {
+        padding: 60px 20px 60px 20px;
+        text-align: center;
+    }
+    #banner .banner-text h5 {
+        margin-bottom: 0px !important;
+    }
+    #banner .banner-text h2{
+        margin-left: 0px
+    }
+    #banner .banner-text p{
+        margin-top: 0px;
+    }
+    /* banner ends */
+
+    /* register starts */
+    .register{
+        bottom: -240px;
+    }
+    /* register ends */
+
+    /* game starts */
+    .game-header {
+        padding-top: 290px;
+        padding-bottom: 30px;
+    }
+    #game .game-item {
+        padding-bottom: 60px;
+    }
+    /* game ends */
+
+    /* spin starts */
+    #spin{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #spin .spin-text {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .spin-text h5 {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .spin-text p {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    #spin .spin-text .spin-text-btn {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    /* spin ends */
+
+    /* price starts */
+    #price {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #price .price-item {
+        margin-top: 80px;
+    }
+    #price .price-item .price-body .price-text-btn {
+        padding: 5px 5px;
+    }
+    /* price ends */
+
+     /* tournaments starts */
+     #tournaments{
+        padding: 60px 0;
+    }
+    #tournaments .question .question-header{
+        padding-right: 0;
+        text-align: center;
+    }
+    #tournaments .question .question-header ol li span {
+        display: inline-block;
+        width: 280px;
+        padding: 15px 0;
+    }
+    #tournaments .question .question-header ol P {
+        padding: 0;
+        margin-bottom: 0 !important;
+    }
+    #tournaments .today-tournaments .tournaments-header h3{
+        text-align: center;
+    }
+    .today-tournaments .count p {
+        top: 60px;
+        left: 0;
+    }
+    .today-tournaments .simply-countdown {
+        top: -20px;
+        left: 200px;
+    }
+    .simply-countdown > .simply-section {
+        margin: 0px 10px 0px 0px;
+    }
+    /* tournaments ends */
+
+    /* payments starts */
+    #payments{
+        padding: 60px 0;
+    }
+    #payments .payment {
+        padding: 0;
+    }
+    #payments .subscribe .s-mail form {
+        margin-bottom: 40px;
+    }
+    /* payments ends */
+
+    /* footer starts */
+    #footer{
+        text-align: center;
+    }
+    #footer .footer-top .jackpot .jackpot-body p{
+        padding-right: 0;
+    }
+    #footer .footer-top .import-links{
+        padding: 30px 0;
+    }
+    #footer .security-body{
+        padding-left: 50px;
+    }
+    #footer .footer-copy p::after{
+        display: none;
+    }
+    #footer .footer-copy p::before{
+        display: none;
+    }
+    /* footer ends */
+
+    /* back-top button starts */
+    .bc-tp-btn {
+        right: 12px;
+        bottom: 30px;
+    }
+    .bc-tp-btn i {
+        font-size: 30px;
+        padding: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    /* back-top button ends */
+}
+/*============================= 
+small device
+============================= */
+
+/*============================= 
+medium device
+============================= */
+@media(min-width: 768px) and (max-width: 991px){
+
+    /* navbar starts */
+    .navbar{
+        background: #9d4dfb;
+    }
+    .navbar-brand img{
+        width: 90% !important;
+    }
+    .navbar-toggler{
+        border: 2px solid #8230fd;
+        color: #ffffff;
+        margin-top: 60px;
+    }
+    .navbar ul li{
+        text-align: center;
+        padding-bottom: 20px !important;
+    }
+    .navbar ul li a{
+        transition: all linear .6s;
+        -webkit-transition: all linear .6s;
+        -moz-transition: all linear .6s;
+        -ms-transition: all linear .6s;
+        -o-transition: all linear .6s;
+}
+    .navbar ul li a:hover{
+        background: #fff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .navbar .nav-btn{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    .navbar .nav-btn a{
+        display: inline-block;
+        text-align: center;
+        margin-right: 30px;
+    }
+    /* navbar ends */
+
+    /* banner starts */
+    #banner .banner-img {
+        padding-top: 200px;
+    }
+    #banner .banner-img img{
+        margin-left: 0;
+    }
+    #banner .banner-text {
+        padding: 80px 104px 200px 104px;
+        text-align: center;
+    }
+    #banner .banner-text h5 {
+        margin-bottom: 0px !important;
+    }
+    #banner .banner-text h2{
+        margin-left: 0px
+    }
+    /* banner ends */
+
+    /* register starts */
+    .register{
+        bottom: -130px;
+    }
+    /* register ends */
+
+    /* game starts */
+    .game-header {
+        padding-bottom: 60px;
+    }
+    #game .game-item {
+        padding-bottom: 60px;
+    }
+    #game .game-item .game-overlay h2{
+        padding-top: 0;
+    }
+    #game .game-item .game-overlay a {
+        margin-top: 20px;
+    }
+    /* game ends */
+
+    /* spin starts */
+    #spin .spin-text {
+        padding: 0;
+        text-align: center;
+    }
+    .spin-text h5 {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .spin-text p {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    /* spin ends */
+
+    /* price starts */
+    #price {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    #price .price-item {
+        margin-top: 80px;
+    }
+    #price .price-item .price-body .price-text-btn {
+        padding: 5px 5px;
+    }
+    /* price ends */
+
+    /* tournaments starts */
+    #tournaments .question .question-header ol li span{
+        padding: 30px 0;
+    }
+    #tournaments .question .question-header ol P{
+        padding: 0;
+    }
+    .today-tournaments .simply-countdown {
+        top: -35px;
+        left: 320px;
+    }
+    /* tournaments ends */
+
+    /* payments starts */
+    #payments .payment {
+        padding: 0;
+    }
+    #payments .subscribe .s-mail form a i {
+        padding-left: 2%;
+    }
+    #payments .payment .p-img a img {
+        padding: 0;
+    }
+    /* payments ends */
+
+    /* footer starts */
+    #footer .footer-top .jackpot .jackpot-header h3{
+        padding-right: 100px;
+    }
+    #footer .footer-top .jackpot .jackpot-body p {
+        padding-right: 0;
+    }
+    #footer .footer-top .security {
+        padding-left: 30px;
+    }
+    #footer .footer-top .security-body .security-body-text p {
+        padding-right: 0;
+    }
+    #footer .footer-copy p::after{
+        display: none;
+    }
+    #footer .footer-copy p::before{
+        display: none;
+    }
+    /* footer ends */
+}
+/*============================= 
+medium device
+============================= */
+
+/*============================= 
+large device
+============================= */
+@media(min-width: 992px) and (max-width: 1199px){
+
+
+    /* navbar starts */
+    .navbar .navbar-nav .nav-item {
+        padding: 0 22px;
+    }
+    .navbar .navbar-nav .nav-item a{
+        font-size: 18px;
+    }
+    .navbar .nav-btn a {
+        padding: 5px 10px;
+    }
+    /* navbar ends */
+
+    /* banner starts */
+    #banner .banner-img img {
+        margin-left: 0;
+    }
+    #banner .banner-text {
+        padding: 220px 0px 220px 0px;
+    }
+    /* banner ends */
+
+    /* spin starts */
+    #spin .spin-text {
+        padding: 0;
+    }
+    .spin-text h5 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    /* spin ends */
+
+    /* price starts */
+    #price .price-item .price-body .price-text-btn {
+        padding: 5px 10px;
+    }
+    /* price ends */
+
+    /* tournaments starts */
+    #tournaments .question .question-header ol P {
+        padding: 0px;
+    }
+    #tournaments .question .question-header ol li i{
+        color: #a60084;
+    }
+    #tournaments .question .question-header ol li span {
+        width: auto;
+        padding: 30px 0px;
+    }
+    .today-tournaments .simply-countdown{
+        top: -35px;
+        left: 160px;
+        font-size: 16px;
+    }
+    .simply-countdown > .simply-section {
+        margin-left: 0;
+        margin-right: 10px;
+        width: 70px !important;
+        height: 70px !important;
+    }
+    /* tournaments ends */
+
+    /* payments starts */
+    #payments .payment {
+        padding: 0;
+    }
+    /* payments ends */
+
+    /* footer starts */
+    #footer .footer-top .security {
+        padding: 0px 60px 0px 60px;
+    }
+    .security-body {
+        margin-right: 0;
+    }
+    /* footer ends */
+
+}
+/*============================= 
+large device
+============================= */
+
+/*============================= 
+extra large device
+============================= */
+@media(min-width: 1200px) and (max-width: 1399px){
+
+    /* banner starts */
+    #banner .banner-img img {
+        margin-left: 0;
+    }
+    /* banner ends */
+
+    /* tournaments starts */
+    #tournaments .question .question-header ol li span {
+        width: 600px;
+        padding: 30px 0px 30px 30px;
+    }
+    #tournaments .question .question-header ol P{
+        padding: 0px 0px 0px 30px;
+    }
+    .today-tournaments .simply-countdown{
+        top: -35px;
+        left: 170px;
+    }
+    .simply-countdown > .simply-section {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    /* tournaments ends */
+
+    /* footer starts */
+    .security-body {
+        margin-right: 0;
+    }
+    /* footer ends */
+
+}
+/*============================= 
+extra large device
+============================= */
+
+/*============================= 
+extra extra large device
+============================= */
+@media(min-width: 1400px) and (max-width: 1500px){
+
+/* banner starts */
+#banner .banner-img img {
+    margin-left: 0;
+}
+/* banner ends */
+
+}
+/*============================= 
+extra extra large device
+============================= */

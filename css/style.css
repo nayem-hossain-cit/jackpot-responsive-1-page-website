@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root{
+    --ff1: 'Nunito', sans-serif;
+    --ff2: 'Anton', sans-serif;
+    --bg1: #150035;
+    --bg2: #0b001b;
+    --brand: #8230fd;
+    --hd-clr: #fcb100;
+    --bg-overlay: rgba(21, 0, 53, 0.85);
+    --hv-bg: #a60084;
+    --btn-bg: #570dc8;
+    --text-shadow-h: 2px 5px 0px rgba(11, 0, 27, 0.2), 0px 0px 0px #0b001b;
+    --text-shadow: 2px 5px 0px rgba(11, 0, 27, 0.5), 0px 0px 0px #0b001b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/*=========================== 
+common css ends
+=========================== */
+.nunito-reg{
+    font-family: var(--ff1);
+    font-weight: 400;
+}
+.nunito-med{
+    font-family: var(--ff1);
+    font-weight: 500;
+}
+.nunito-semi{
+    font-family: var(--ff1);
+    font-weight: 600;
+}
+.nunito-bold{
+    font-family: var(--ff1);
+    font-weight: 600;
+}
+.anton-reg{
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+/*=========================== 
+font family css ends
+=========================== */
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-48{
+    font-size: 48px;
+}
+.fs-50{
+    font-size: 50px;
+}
+.fs-331{
+    font-size: 331px;
+}
+
+/*=========================== 
+font size css ends
+=========================== */
+.text-up{
+    text-transform: uppercase;
+}
+.text-cap{
+    text-transform: capitalize;
+}
+.text-white{
+    color: #ffffff;
+}
+/*=========================== 
+typography css ends
+=========================== */
+.common-header h3{
+    text-shadow: 0 0 50px #440058, 0 0 50px #440058;
+    color: var(--hd-clr);
+    letter-spacing: 3px;
+}
+.common-btn a{
+    background:  #570dc8;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    display: inline-block;
+    box-shadow: 0px 5px 0px 0px rgba(88, 13, 200, 0.8);
+}
+.common-btn a:hover{
+    background: #d01bae;
+    box-shadow: 0px 5px 0px 0px rgba(255, 57, 219, 0.8);
+}
+/*=========================== 
+header css ends
+=========================== */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+.navbg{
+    background: #9d4dfb !important;
+    transition: all linear.4s;
+    -webkit-transition: all linear.4s;
+    -moz-transition: all linear.4s;
+    -ms-transition: all linear.4s;
+    -o-transition: all linear.4s;
+}
+.navbar .navbar-nav{
+    padding-top: 50px;
+}
+.navbar .navbar-nav .nav-item{
+    padding: 0 27px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: var(--brand);
+    padding: 0;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: #ff39dc;
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color: #ff39dc;
+}
+.navbar .nav-btn{
+    padding-top: 40px;
+}
+.navbar .nav-btn a{
+    padding: 5px 20px;
+    background: #570dc8;
+    box-shadow: 0px 5px 0px 0px rgba(88, 13, 200, 0.8);
+    text-shadow: var(--text-shadow-h);
+    border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-left: 20px;
+}
+.navbar .nav-btn a:hover{
+    background: #ff39dc;
+    box-shadow: 0px 5px 0px 0px rgba(255, 57, 219, 0.8);
+}
+/*=========================== 
+navbar css ends
+=========================== */
+#banner{
+    background: var(--bg1);
+}
+.pos{
+    position: relative !important;
+}
+#banner .banner-img{
+    padding-top: 170px;
+}
+#banner .banner-img img{
+    margin-left: -100px;
+}
+#banner .banner-text{
+    padding: 220px 150px 220px 30px;
+}
+#banner .banner-text h5{
+    margin-bottom: -45px !important;
+}
+#banner .banner-text h2{
+    color: #fcb100;
+    text-shadow: 0 0 50px #440058, 0 0 50px #440058;
+    margin-left: -12px;
+}
+#banner .banner-text p{
+    margin-top: -20px;
+    line-height: 26px;
+    margin-bottom: 25px !important;
+}
+#banner .banner-text .banner-text-btn a{
+    text-shadow: var(--text-shadow-h);
+} 
+/*=========================== 
+banner css ends
+=========================== */
+.register{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+.register .r-item{
+    background: #570dc8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+.register .r-slider .r-item h3{
+    color: var(--hd-clr);
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-shadow: var(--text-shadow-h);
+}
+.register .r-slider .r-item h4{
+    text-shadow: var(--text-shadow-h);
+}
+.register .r-item h5{
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+/*=========================== 
+register css ends
+=========================== */
+#game{
+    background: var(--bg2);
+}
+.game-header{
+    padding-top: 180px;
+    padding-bottom: 55px;
+}
+#game .game-item{
+    padding-bottom: 100px;
+}
+#game .game-item .game-img{
+    overflow: hidden;
+}
+#game .game-item img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#game .game-item:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+#game .game-item .game-overlay{
+    background: rgba(21, 0, 53, 0.85);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#game .game-item:hover .game-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+#game .game-item .game-overlay h2{
+    padding-top: 100px;
+    text-shadow: var(--text-shadow-h);
+}
+#game .game-item .game-overlay a{
+    background:  #570dc8;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    display: inline-block;
+    box-shadow: 0px 5px 0px 0px rgba(88, 13, 200, 0.8);
+    margin-top: 50px;
+    text-shadow: var(--text-shadow-h);
+}
+#game .game-item .game-overlay a:hover{
+    background: #ff39dc;
+    box-shadow: 0px 5px 0px 0px rgba(255, 57, 219, 0.8);
+}
+/*=========================== 
+game css ends
+=========================== */
+#spin{
+    background: var(--bg1);
+    padding: 100px 0;
+}
+#spin .spin-text{
+    padding-left: 175px;
+    padding-top: 75px;
+}
+.spin-text h5{
+    line-height: 26px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.spin-text p{
+    line-height: 26px;
+    padding-bottom: 60px;
+}
+#spin .spin-text .spin-text-btn{
+    text-shadow: var(--text-shadow-h);
+}
+/*=========================== 
+spin css ends
+=========================== */
+#price{
+    background: var(--bg2);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#price .price-item{
+    margin-top: 90px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    position: relative;
+}
+#price .price-item:hover{
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+}
+#price .price-item .price-header{
+    background: #d01bae;
+    box-shadow: 0px 5px 0px 0px #a60084;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    left: 0;
+    z-index: 1;
+}
+#price .price-item:hover .price-header{
+    visibility: visible;
+    opacity: 1;
+}
+#price .price-item .price-header h3{
+    padding: 15px 0;
+}
+#price .price-item .price-body{
+    background: linear-gradient(#9d4dfb, #590ec9);
+    padding-bottom: 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-top: 50px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#price .price-item .price-body .p-body-head h3{
+    text-shadow: var(--text-shadow);
+}
+#price .price-item .price-body h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#price .price-item .price-body p{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #0b001b;
+}
+#price .price-item .price-body .p-body-main ul{
+    padding-top: 30px;
+}
+#price .price-item .price-body .p-body-main ul li{
+    padding-bottom: 15px;
+}
+#price .price-item .price-body .price-text-btn{
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background:  #570dc8;
+    padding: 5px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    display: inline-block;
+    box-shadow: 0px 5px 0px 0px rgba(88, 13, 200, 0.8);
+}
+#price .price-item:hover .price-body .price-text-btn{
+    background: #d01bae;
+    box-shadow: 0px 5px 0px 0px rgba(255, 57, 219, 0.8);
+}
+#price .price-item:hover .price-body .price-text-btn a{
+    text-shadow: var(--text-shadow-h);
+}
+/*=========================== 
+price css ends
+=========================== */
+#tournaments{
+    background: var(--bg1);
+    padding: 100px 0;
+}
+#tournaments .question .question-header{
+    padding-right: 20px;
+}
+#tournaments .question .question-header h3{
+    padding-bottom: 35px;
+    border-bottom: 3px solid #0b001b;
+    box-shadow: 0px 1px 0px 0px #440058;
+}
+#tournaments .question .question-header ol{
+    padding: 50px 0;
+}
+#tournaments .question .question-header ol li span{
+    display: inline-block;
+    width: 660px;
+    padding: 10px;
+    padding: 30px 55px;
+}
+#tournaments .question .question-header ol li i{
+    font-size: 20px;
+}
+#tournaments .question .question-header ol P{
+    display: none;
+    margin-top: 15px;
+    margin-bottom: 30px !important;
+    line-height: 26px;
+    padding: 0px 55px;
+}
+.border-show{
+    border: 1px solid #fcb100;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.simply-countdown > .simply-section{
+    width: 90px !important;
+    height: 70px !important;
+    color: #fcb100;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: 0 0px 0px rgba(0,0,0,.12),0 0px 0px rgba(0,0,0,.24);
+    border: 1px solid #fcb100;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.simply-countdown > .simply-days-section{
+    display: none;
+}
+.today-tournaments .count{
+    position: relative;
+    padding-bottom: 160px;
+}
+.today-tournaments .count p{
+    position: absolute;
+    top: 75px;
+    left: 0;
+}
+.today-tournaments .simply-countdown {
+    position: absolute;
+    top: -35px;
+    left: 180px;
+    display: flex;
+}
+#tournaments .today-tournaments .tournaments-header h3{
+    padding-bottom: 35px;
+    border-bottom: 3px solid #0b001b;
+    box-shadow: 0px 1px 0px 0px #440058;
+}
+#tournaments .today-tournaments .tournament-list ul li{
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 3px solid #0b001b;
+    box-shadow: 0px 1px 0px 0px #440058;
+}
+#tournaments .today-tournaments .tournament-list ul li P{
+    width: 135px;
+}
+#tournaments .today-tournaments .tournament-list .mCustomScrollbar{
+    height: 320px;
+}
+#tournaments .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    width: 15px;
+    height: 50px;
+    background: #570dc8;
+}
+#tournaments .mCSB_scrollTools .mCSB_draggerRail {
+	width: 1px;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+    background: #440058;
+    box-shadow: 0px 0px 0px 1px #440058;
+}
+/*=========================== 
+tournaments css ends
+=========================== */
+#payments{
+    background: linear-gradient(#9c4cfb, #590fc9);
+    box-shadow: 0px 5px 0px 0px rgba(89, 15, 201, 0.8);
+    padding: 30px 0;
+}
+#payments .p-header h3{
+    text-shadow: var(--text-shadow);
+    padding-bottom: 20px;;
+}
+#payments .subscribe .s-mail form{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #150035;
+}
+#payments .subscribe .s-mail form input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 90%;
+    padding-left: 15px;
+}
+#payments .subscribe .s-mail form a{
+    border: none;
+    outline: none;
+    width: 10%;
+}
+#payments .subscribe .s-mail form a i{
+    line-height: 40px;
+    color: #150035;
+    border-left: 1px solid #150035;
+    font-size: 20px;
+    padding-left: 3%;
+}
+#payments .payment{
+    padding: 0 50px;
+}
+#payments .payment .p-img a img{
+    padding-right: 20px;
+}
+/*=========================== 
+payments css ends
+=========================== */
+#footer .footer-top{
+    background: var(--bg2);
+    padding-bottom: 25px;
+    padding-top: 60px;
+    border-bottom: 2px solid #150035;
+}
+#footer .footer-header{
+    padding-bottom: 30px;
+}
+#footer .footer-top .jackpot .jackpot-header h3{
+    text-shadow: var(--text-shadow);
+}
+#footer .footer-top .jackpot .jackpot-body p{
+    padding-bottom: 40px;
+    padding-right: 70px;
+    line-height: 26px;
+}
+#footer .footer-top .jackpot .jackpot-social a{
+    margin-right: 15px;
+}
+#footer .footer-top .jackpot .jackpot-social a i{
+    width: 50px;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    background: #8230fd;
+    box-shadow: 0px 5px 0px 0px rgba(88, 13, 200, 0.7);
+    text-shadow: var(--text-shadow);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#footer .footer-top .jackpot .jackpot-social a i:hover{
+    background: #a60084;
+    box-shadow: 0px 5px 0px 0px rgba(166, 0, 133, 0.7);
+}
+#footer .footer-top  .im-link-body ul li{
+    padding-bottom: 15px;
+}#footer .footer-top  .im-link-body ul li a{
+    color: #ffffff;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+#footer .footer-top  .im-link-body ul li a:hover{
+    color: var(--brand);
+}
+#footer .footer-top .security{
+    padding: 0 100px;
+}
+.security-body {
+	margin-right: 100px;
+}
+#footer .footer-top .security-body .s-info1,.s-info2{
+    align-items: center;
+    margin-bottom: 35px;
+}
+#footer .footer-top .security-body .security-body-img{
+    margin-right: 30px;
+    cursor: pointer;
+}
+#footer .footer-copy{
+    background: var(--bg2);
+}
+#footer .footer-copy p{
+    padding: 20px 0 !important;
+    position: relative;
+}
+#footer .footer-copy p::after{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #a60084;
+    box-shadow: 0px 5px 5px 0px rgba(166, 0, 133, 0.9);
+    position: absolute;
+    top: 0;
+    left: 200px;
+    animation: animate linear 10s infinite;
+    -webkit-animation: animate linear 10s infinite;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+#footer .footer-copy p::before{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #a60084;
+    box-shadow: 0px 5px 5px 0px rgba(166, 0, 133, 0.9);
+    position: absolute;
+    top: 0;
+    right: 200px;
+    animation: move1 linear 10s infinite;
+    -webkit-animation: move1 linear 10s infinite;
+}
+@keyframes move1{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 100%;
+    }
+}
+/*=========================== 
+footer css ends
+=========================== */
+/*===========================
+back-top button css starts
+=============================*/
+.bc-tp-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 999999999;
+    cursor: pointer;
+    display: none;
+}
+.bc-tp-btn i{
+    font-size: 50px;
+    background: #570dc8;
+    color: #a60084;
+    padding: 0 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/*======================= 
+back-top button css ends
+=======================*/
